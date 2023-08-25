@@ -47,3 +47,31 @@ else if (hacker2 < hacker1) {
 else {
     console.log("What?! You both have the same name?");
 }
+
+
+//Bonus 1
+
+const longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor lacus metus, et sagittis ex suscipit id. Integer feugiat, diam eu tempor suscipit, libero urna euismod turpis, eget condimentum ipsum ligula at est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean non cursus neque. Curabitur vel ex lobortis urna sagittis interdum mattis ut lorem. Maecenas eros dolor, sollicitudin quis nibh quis, ornare pulvinar nulla. Curabitur non tincidunt nunc, in tincidunt urna. Quisque placerat volutpat lacus id tincidunt. Fusce pulvinar nec orci eget mollis. Quisque eu lorem eu nibh placerat scelerisque sit amet vitae sem. In pharetra semper nunc, at varius orci feugiat quis. Nunc pretium est eu erat elementum ornare. Suspendisse varius nisi pretium sapien gravida congue. Maecenas non neque sed leo tempus pharetra ut quis urna. Mauris quis commodo est. Ut tincidunt nisi sit amet mi placerat, rutrum sodales ligula luctus. Nulla a lacus neque. Proin a porttitor lectus, sed volutpat tellus. Cras justo mauris, bibendum ac lectus sed, auctor cursus risus. Morbi id enim maximus, gravida dolor a, placerat nulla. Aenean consectetur purus eros, quis iaculis sapien pulvinar vel. Morbi eu facilisis ipsum. In cursus ut leo in accumsan. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
+
+let words = "";
+for (let i = 0; i < longText.length; i++) {
+    if (longText[i] === " ") {
+        words++;
+    }
+}
+
+console.log("Words:", words);
+
+
+let wordEt = "";
+for (let i = 0; i < longText.length; i++) {
+    if (longText[i] === "e" && longText[i+1] === "t" && longText[i-1] === " " && longText[i+2] === " ") {
+        wordEt++;
+    }
+}
+
+console.log("Word et:", wordEt);
+
+
+//Bonus 2
+
