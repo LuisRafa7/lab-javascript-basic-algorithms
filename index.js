@@ -75,3 +75,29 @@ console.log("Word et:", wordEt);
 
 //Bonus 2
 
+let phraseToCheck = "step on no pets"
+
+//remove spaces
+let phraseToCheckNoSpaces = ""
+for (let i = 0; i < phraseToCheck.length; i++) {
+    if (phraseToCheck[i] !== " ") {
+        phraseToCheckNoSpaces += phraseToCheck[i];
+    } 
+}
+//console.log(phraseToCheckNoSpaces);
+
+//string in backwards
+
+let phraseToCheckInBackwards = ""
+for (let i = phraseToCheckNoSpaces.length - 1; i >= 0; i--) {
+    phraseToCheckInBackwards += phraseToCheckNoSpaces[i];
+}
+//console.log(phraseToCheckInBackwards);
+
+if (phraseToCheckNoSpaces === phraseToCheckInBackwards) {
+    console.log("It's a Palindrome!");
+}
+
+else {
+    console.log("It's not a Palindrome!")
+}
