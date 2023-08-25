@@ -77,11 +77,16 @@ console.log("Word et:", wordEt);
 
 let phraseToCheck = "step on no pets"
 
+//LowerCase
+let phraseToCheckLowerCase = phraseToCheck.toLowerCase();
+
+//console.log(phraseToCheckLowerCase);
+
 //remove spaces
 let phraseToCheckNoSpaces = ""
-for (let i = 0; i < phraseToCheck.length; i++) {
-    if (phraseToCheck[i] !== " ") {
-        phraseToCheckNoSpaces += phraseToCheck[i];
+for (let i = 0; i < phraseToCheckLowerCase.length; i++) {
+    if (phraseToCheckLowerCase[i] >= "a" &&  phraseToCheckLowerCase[i] <= "z") {
+        phraseToCheckNoSpaces += phraseToCheckLowerCase[i];
     } 
 }
 //console.log(phraseToCheckNoSpaces);
